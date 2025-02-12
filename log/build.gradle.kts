@@ -27,6 +27,7 @@ kotlin {
                 jvmTarget = libs.versions.jvmTarget.get()
             }
         }
+        publishLibraryVariants("release")
     }
 
     sourceSets {
@@ -38,10 +39,6 @@ kotlin {
             implementation(libs.junit)
             implementation(libs.mockk)
         }
-    }
-
-    android {
-        publishLibraryVariants("release")
     }
 }
 
